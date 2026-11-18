@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/mochilkity-cmyk/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/mochilkity-cmyk/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01)
 
-A chess engine in 3,548 bytes of Python (stdlib only) for the
+A chess engine in 3,547 bytes of Python (stdlib only) for the
 [make.fun tiny-chess-01 bounty](https://make.fun/bounty/tiny-chess-01).
 
 `main.py` is the whole engine: an LZMA payload that unpacks to a 0x88
@@ -14,6 +14,6 @@ late-move reductions and null-move pruning, searching a fixed budget of
 It talks to the trial env alone over HTTP (`POST /game`, `/move`,
 `/resign`) and plays the house gauntlet.
 
-`main.py` is packed from the readable source `dev/payload.py` with the
-kit's `makefun compress`; the source is not part of this snapshot and
-travels with the build transcripts instead.
+`main.py` is packed from the readable source `dev/payload2.py` (v2 engine,
+see BUILD_LOG.md) with the kit's `makefun compress`; the source is not part
+of this snapshot and travels with the build transcripts instead.
